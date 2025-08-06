@@ -14,6 +14,7 @@ A modern portfolio website showcasing my projects and skills. Built with HTML, B
 - `index.html`: Main page
 - `css/styles.css`: Custom styles
 - `js/scripts.js`: Animation scripts
+- `img/avatar.png`: Custom 2D avatar (DiceBear)
 - `img/weather_dashboard.jpg`: Weather app screenshot
 - `img/analytics_dashboard.jpg`: Analytics screenshot
 - `img/etl_pipeline.jpg`: ETL screenshot
