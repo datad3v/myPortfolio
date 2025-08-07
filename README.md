@@ -6,13 +6,14 @@ A modern portfolio website showcasing my projects and skills. Built with HTML, B
 [https://datad3v.github.io/myPortfolio](https://datad3v.github.io/myPortfolio)
 
 ## Setup
-1. Add Bootstrap CDN to `index.html`.
+1. Add Bootstrap CDN and Bootstrap Icons CDN to `index.html`.
 2. Embed Google Forms contact form.
 3. Preview: `http-server`
 
 ## Features
 - Responsive design with Bootstrap 5.3.3
 - Sliding icons animation (coffee cup, computer, blueprint) in About Me section
+-Enhanced About Me section with achievements and polished formatting
 - Mobile-friendly Google Form iframe and social links
 - Flaticon attribution for icons
 
