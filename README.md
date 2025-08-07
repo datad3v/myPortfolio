@@ -20,4 +20,10 @@ A modern portfolio website showcasing my projects and skills. Built with HTML, B
 - `img/etl_pipeline.jpg`: ETL screenshot
 - `img/api_integration.jpg`: API screenshot
 
+## Attribution
+Icons by [Flaticon](https://www.flaticon.com):
+- [Coffee Cup](https://www.flaticon.com/free-icons/coffee)
+- [Computer](https://www.flaticon.com/free-icons/computer)
+- [Blueprint](https://www.flaticon.com/free-icons/prototype)
+
 ![Portfolio Screenshot](img/weather_dashboard.jpg)
