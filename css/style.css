@@ -6,12 +6,12 @@
 
 .icons-container {
     position: relative;
-    min-height: 80px;
+    min-height: 50px;
 }
 
 .icon-slide {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
     display: block;
     opacity: 0;
@@ -43,4 +43,33 @@
 
 .about-text.visible {
     opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .icons-container {
+        gap: 1rem;
+    }
+
+    .icon-slide {
+        width: 40px;
+        height: 40px;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .about-text {
+        font-size: 0.9rem;
+    }
+
+    .ratio-4x3 iframe {
+        max-width: 100%;
+        height: auto; /* Ensure iframe scales */
+    }
 }
