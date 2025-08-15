@@ -10,99 +10,138 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body class="bg-light font-sans">
-    <!-- Hero Section -->
-    <header class="bg-primary text-white py-5 text-center">
-        <img src="img/avatar.png" alt="datad3v Avatar" class="rounded-circle mb-3" style="width: 100px; height: 100px;">
-        <h1 class="display-4 fw-bold" data-aos="fade-up">Mauricio Guzman</h1>
-        <p class="lead mt-3" data-aos="fade-up" data-aos-delay="100">Solutions Architect</p>
-        <a href="#projects" class="btn btn-light mt-4" data-aos="fade-up" data-aos-delay="200">View Projects</a>
+    <!-- Header Section -->
+    <header class="bg-primary text-white py-4 text-center" id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Mauricio Guzman</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-section">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#personal-projects">Personal Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="header-content container mt-3">
+            <div class="avatar-container" data-aos="zoom-in" data-aos-delay="100">
+                <img src="img/avatar.png" alt="datad3v Avatar" class="rounded-circle mb-3 avatar-img">
+            </div>
+            <h1 class="display-4 fw-bold" data-aos="fade-up" data-aos-delay="200">Solutions Architect</h1>
+            <p class="lead mt-3" data-aos="fade-up" data-aos-delay="300">Turning Data Chaos into Clarity</p>
+        </div>
     </header>
     <!-- About Me Section -->
     <section class="py-5 px-4 container bg-white shadow-sm rounded" data-aos="fade-up" id="about-section">
-        <h2 class="h3 text-center mb-4 fw-bold">About Me</h2>
-        <div class="icons-container d-flex justify-content-center gap-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-            <img src="img/coffee-cup.png" alt="Coffee Cup" class="icon-slide" id="coffee-icon">
-            <img src="img/laptop.png" alt="Computer" class="icon-slide" id="computer-icon">
-            <img src="img/blueprint.png" alt="Blueprint" class="icon-slide" id="blueprint-icon">
+        <h2 class="h3 text-center mb-4 fw-bold section-header">About Me</h2>
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center mb-4 mb-md-0" data-aos="fade-right" data-aos-delay="100">
+                <img src="img/coffee-cup.png" alt="Coffee Cup" class="icon-slide mb-3" style="width: 60px;">
+                <img src="img/laptop.png" alt="Computer" class="icon-slide mb-3" style="width: 60px;">
+                <img src="img/blueprint.png" alt="Blueprint" class="icon-slide" style="width: 60px;">
+            </div>
+            <div class="col-md-8" data-aos="fade-left" data-aos-delay="200">
+                <p class="lead fs-5 mb-3">Hi, I’m Mauricio, a problem solver passionate about impactful solutions.</p>
+                <p class="text-muted about-text">As a Salesforce Marketing Cloud Solutions Architect, I design automated, omni-channel systems that turn complex business needs into seamless customer experiences. I bridge marketing, tech, and strategy through collaborative blueprinting, leveraging data pipelines (Azure, Snowflake), API integrations, and analytics (Power BI, Google Analytics). I thrive on working with diverse teams, exploring innovative technologies, and solving problems that make a real difference—always with a focus on scalability, security, and human connection.</p>
+            </div>
         </div>
-        <div class="text-center">
-            <p class="lead fs-5 mb-3">Caffeine-powered architect turning chaos into clarity. Passionate about data, automation, and building scalable, human-centered solutions.</p>
-            <p class="text-muted about-text" id="about-text">With expertise in ETL pipelines, API integration, and data visualization, I design scalable, secure systems to drive efficiency and innovation. My work spans Python, SQL, AWS, and tools like Plotly and Pandas, delivering robust solutions for complex data challenges. When I'm not coding, you’ll find me sipping coffee and exploring new tech trends to stay ahead in the field.</p>
-            <div class="mt-4">
-                <h4 class="h5 fw-bold">Key Achievements</h4>
-                <ul class="list-unstyled text-muted">
-                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Built a real-time weather dashboard with WeatherStack API and SQLite.</li>
-                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Designed ETL pipelines for seamless data processing on AWS.</li>
-                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Developed interactive analytics dashboards with Plotly and Pandas.</li>
-                </ul>
+        <div class="mt-5">
+            <h3 class="h4 text-center mb-4 fw-bold section-subheader">Work History</h3>
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title h5 fw-bold">Salesforce Marketing Cloud Solutions Architect</h4>
+                            <p class="text-muted small">Lithia & Driveway | Jul 2023 – Present | Remote</p>
+                            <ul class="list-unstyled text-muted">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Architect omni-channel SFMC journeys and data feeds for scalability.</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Lead cross-functional blueprinting for marketing and tech alignment.</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Drive digital solutions with SQL, AMPscript, and API integrations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title h5 fw-bold">Marketing Data Engineer</h4>
+                            <p class="text-muted small">Lithia & Driveway | May 2022 – Jul 2023 | Remote</p>
+                            <ul class="list-unstyled text-muted">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Optimized data platforms for seamless marketing operations.</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Built Power BI dashboards for data-driven insights.</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Collaborated on API-driven data pipelines and reporting.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-white container">
-        <h2 class="h3 text-center mb-4" data-aos="fade-up">Projects</h2>
+    <!-- Personal Projects Section -->
+    <section id="personal-projects" class="py-5 bg-white container">
+        <h2 class="h3 text-center mb-4 fw-bold section-header">Personal Projects</h2>
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col" data-aos="fade-up" data-aos-delay="100">
-                <div class="card h-100">
+                <div class="card h-100 shadow-sm text-center">
                     <div class="card-body">
-                        <h3 class="card-title h5">Real-Time Weather Dashboard</h3>
-                        <p class="card-text text-muted">An ETL pipeline fetching weather data via WeatherStack API, stored in SQLite, and visualized with Plotly.</p>
-                        <a href="https://github.com/datad3v/Data-Pipeline4Real-Time-Analytics-Dashboard" class="card-link">GitHub</a>
+                        <h3 class="card-title h5 fw-bold">Data Analytics Dashboard</h3>
+                        <p class="card-text text-muted">A dashboard for visualizing business metrics using Python, Pandas, and Plotly.</p>
+                        <a href="https://github.com/datad3v/another-repo" class="card-link btn btn-outline-primary btn-sm">GitHub</a>
                     </div>
-                    <img src="img/weather_dashboard.jpg" alt="Weather Dashboard" class="card-img-bottom p-3">
                 </div>
             </div>
             <div class="col" data-aos="fade-up" data-aos-delay="200">
-                <div class="card h-100">
+                <div class="card h-100 shadow-sm text-center">
                     <div class="card-body">
-                        <h3 class="card-title h5">Data Analytics Dashboard</h3>
-                        <p class="card-text text-muted">A dashboard for visualizing business metrics using Python, Pandas, and Plotly.</p>
-                        <a href="https://github.com/datad3v/another-repo" class="card-link">GitHub</a>
+                        <h3 class="card-title h5 fw-bold">ETL Pipeline Tool</h3>
+                        <p class="card-text text-muted">A tool for automating data extraction, transformation, and loading with AWS and SQL.</p>
+                        <a href="https://github.com/datad3v/another-repo" class="card-link btn btn-outline-primary btn-sm">GitHub</a>
                     </div>
-                    <img src="img/analytics_dashboard.jpg" alt="Analytics Dashboard" class="card-img-bottom p-3">
                 </div>
             </div>
             <div class="col" data-aos="fade-up" data-aos-delay="300">
-                <div class="card h-100">
+                <div class="card h-100 shadow-sm text-center">
                     <div class="card-body">
-                        <h3 class="card-title h5">ETL Pipeline Tool</h3>
-                        <p class="card-text text-muted">A tool for automating data extraction, transformation, and loading with AWS and SQL.</p>
-                        <a href="https://github.com/datad3v/another-repo" class="card-link">GitHub</a>
-                    </div>
-                    <img src="img/etl_pipeline.jpg" alt="ETL Pipeline" class="card-img-bottom p-3">
-                </div>
-            </div>
-            <div class="col" data-aos="fade-up" data-aos-delay="400">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3 class="card-title h5">API Integration Demo</h3>
+                        <h3 class="card-title h5 fw-bold">API Integration Demo</h3>
                         <p class="card-text text-muted">A demo showcasing REST API integration with Python and Flask.</p>
-                        <a href="https://github.com/datad3v/another-repo" class="card-link">GitHub</a>
+                        <a href="https://github.com/datad3v/another-repo" class="card-link btn btn-outline-primary btn-sm">GitHub</a>
                     </div>
-                    <img src="img/api_integration.jpg" alt="API Integration" class="card-img-bottom p-3">
                 </div>
             </div>
-            <!-- Add more projects here -->
         </div>
     </section>
     <!-- Contact Section -->
-    <section class="py-5 px-4 container" data-aos="fade-up">
-        <h2 class="h3 text-center mb-4">Contact</h2>
+    <section id="contact" class="py-5 px-4 container" data-aos="fade-up">
+        <h2 class="h3 text-center mb-4 fw-bold section-header">Contact</h2>
         <p class="text-muted text-center">Reach out to discuss opportunities:</p>
         <div class="container mt-3">
             <div class="ratio ratio-4x3">
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScAfQCgQWoi0S-xJsc9eorTYznJ1HLVxJU6AxYQkb1EfZMI0w/viewform?embedded=true" class="embed-responsive-item" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
         </div>
-        <div class="d-flex justify-content-center gap-3 mt-3 flex-wrap">
-            <a href="https://www.linkedin.com/in/mauricio-guzman-profile/" class="text-primary">LinkedIn</a>
-            <a href="https://github.com/datad3v" class="text-primary">GitHub</a>
+        <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+            <a href="https://www.linkedin.com/in/mauricio-guzman-profile/" target="_blank">
+                <img src="img/linkedin.png" alt="LinkedIn" class="social-icon" style="width: 40px; height: 40px;">
+            </a>
+            <a href="https://github.com/datad3v" target="_blank">
+                <img src="img/github.png" alt="GitHub" class="social-icon" style="width: 40px; height: 40px;">
+            </a>
         </div>
     </section>
     <!-- Footer -->
     <footer class="bg-primary text-white py-3 text-center">
         <p>&copy; 2025 datad3v. All rights reserved.</p>
-        <p class="small mt-2">Icons by <a href="https://www.flaticon.com" class="text-white" target="_blank">Flaticons</a> (<a href="https://www.flaticon.com/free-icons/coffee" class="text-white" target="_blank" title="coffee icons">Coffee icons created by Smashicons - Flaticon</a>, <a href="https://www.flaticon.com/free-icons/computer" class="text-white" target="_blank" title="computer icons">Computer icons created by Vectors Market - Flaticon</a>, <a href="https://www.flaticon.com/free-icons/prototype" class="text-white" target="_blank" title="prototype icons">Prototype icons created by wanicon - Flaticon</a>)</p>
+        <p class="small mt-2"><a href="credits.html" class="text-white">Credits</a></p>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/scripts.js"></script>

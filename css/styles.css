@@ -1,0 +1,211 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Personal Projects Section */
+#personal-projects .section-header {
+    background: linear-gradient(90deg, #0d6efd, #14b8a6); /* Blue to teal gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+#personal-projects .card {
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#personal-projects .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#personal-projects .card-title {
+    color: #0d6efd; /* Primary blue */
+    font-weight: 600;
+}
+
+#personal-projects .card-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+#personal-projects .card-link {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#personal-projects .card-link:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+/* Contact Section */
+#contact .section-header {
+    background: linear-gradient(90deg, #0d6efd, #14b8a6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.social-icon {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* About Section (unchanged) */
+.section-header {
+    background: linear-gradient(90deg, #0d6efd, #14b8a6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.section-subheader {
+    color: #0d6efd;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.about-text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.icon-slide {
+    transition: transform 0.3s ease;
+}
+
+.icon-slide:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #0d6efd;
+}
+
+.card .text-muted {
+    font-size: 0.9rem;
+}
+
+/* Header Styles (unchanged) */
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+.avatar-container {
+    display: inline-block;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.avatar-img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+}
+
+.avatar-container:hover .avatar-img {
+    transform: scale(1.1);
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.header-content p.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section-header {
+        font-size: 1.75rem;
+    }
+    .section-subheader {
+        font-size: 1.25rem;
+    }
+    .about-text {
+        font-size: 0.95rem;
+    }
+    .icon-slide {
+        width: 50px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .avatar-img {
+        width: 80px;
+        height: 80px;
+    }
+    .header-content h1 {
+        font-size: 2rem;
+    }
+    .header-content p.lead {
+        font-size: 1rem;
+        white-space: normal;
+    }
+    .social-icon {
+        width: 32px;
+        height: 32px;
+    }
+}
