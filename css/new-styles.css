@@ -1,106 +1,199 @@
-body {
-    font-family: 'Inter', sans-serif;
+/* ------------------------------------------- */
+/* CSS VARIABLES — Sage Palette                */
+/* ------------------------------------------- */
+:root {
+    --sage-100: #f2f4f1;
+    --sage-200: #e2e7e3;
+    --sage-300: #cdd7ce;
+    --sage-400: #b3c3b6;
+    --sage-500: #7f9c85;
+    --sage-600: #5d7a64;
+    --sage-700: #3e5444;
+
+    --accent-gold: #d9c98b;
+    --accent-green: #86a98e;
+
+    --text-dark: #2a2f2b;
 }
 
-/* HERO */
+/* ------------------------------------------- */
+/* GLOBAL                                       */
+/* ------------------------------------------- */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--sage-100) !important;
+    color: var(--text-dark) !important;
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--text-dark);
+    font-weight: 700;
+}
+
+p, li {
+    color: var(--text-dark);
+}
+
+/* ------------------------------------------- */
+/* BOOTSTRAP COLOR OVERRIDES                   */
+/* ------------------------------------------- */
+
+/* Replaces Bootstrap's bg-light */
+.bg-light {
+    background-color: var(--sage-100) !important;
+}
+
+/* Replaces bg-white */
+.bg-white {
+    background-color: var(--sage-200) !important;
+}
+
+/* Dark footer/navbar */
+.bg-dark {
+    background-color: var(--sage-700) !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--sage-200) !important;
+}
+
+.nav-link {
+    color: var(--sage-700) !important;
+}
+
+.nav-link:hover {
+    color: var(--sage-500) !important;
+}
+
+/* Buttons */
+.btn-dark {
+    background-color: var(--sage-700) !important;
+    border-color: var(--sage-700) !important;
+    color: #fff !important;
+}
+
+.btn-dark:hover {
+    background-color: var(--sage-600) !important;
+}
+
+.btn-outline-dark {
+    border-color: var(--sage-700) !important;
+    color: var(--sage-700) !important;
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--sage-700) !important;
+    color: white !important;
+}
+
+/* Card backgrounds */
+.shadow-sm {
+    background-color: var(--sage-200) !important;
+}
+
+/* ------------------------------------------- */
+/* HERO SECTION                                */
+/* ------------------------------------------- */
 .hero-section {
     padding-top: 140px;
     padding-bottom: 80px;
 }
 
-.hero-text {
-    max-width: 600px;
+.hero-headshot {
+    max-width: 260px;
+    margin-left: 40px;
 }
 
-.hero-headshot .headshot-placeholder {
-    width: 260px;
-    height: 260px;
-    background: #e9ecef;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.headshot-img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;         /* Rounded corners */
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Soft shadow */
 }
 
-.placeholder-text {
-    color: #6c757d;
-    font-size: 1rem;
-    font-weight: 600;
-}
 
-/* SKILLS */
+/* ------------------------------------------- */
+/* SKILL CARDS                                 */
+/* ------------------------------------------- */
 .skill-card {
-    border: 1px solid #f0f0f0;
-    background: #fafafa;
+    background-color: var(--sage-200);
     border-radius: 12px;
-    transition: 0.2s ease;
+    border: 1px solid var(--sage-300);
+    transition: 0.25s ease;
 }
 
 .skill-card:hover {
-    transform: translateY(-4px);
-    background: white;
+    background-color: var(--sage-300);
+    transform: translateY(-3px);
 }
 
-/* TIMELINE */
+/* ------------------------------------------- */
+/* TIMELINE                                    */
+/* ------------------------------------------- */
 .timeline {
-    border-left: 3px solid #222;
-    padding-left: 30px;
-}
-
-.timeline-item {
-    position: relative;
-    margin-bottom: 40px;
+    border-left: 3px solid var(--sage-500);
+    margin-left: 20px;
+    padding-left: 20px;
 }
 
 .timeline-marker {
-    width: 16px;
-    height: 16px;
-    background: #222;
+    width: 14px;
+    height: 14px;
+    background-color: var(--sage-500);
     border-radius: 50%;
-    position: absolute;
-    left: -42px;
-    top: 4px;
+    margin-left: -31px;
 }
 
-/* PROJECTS */
+/* Timeline item spacing */
+.timeline-item {
+    margin-bottom: 30px;
+}
+
+/* ------------------------------------------- */
+/* PROJECT CARDS                               */
+/* ------------------------------------------- */
 .featured-project {
-    border-left: 5px solid #222;
+    background-color: var(--sage-200) !important;
+    border: 1px solid var(--sage-300);
 }
 
 .project-card {
+    background-color: var(--sage-200);
     border-radius: 12px;
-    background: #fafafa;
-    transition: 0.2s ease;
+    border: 1px solid var(--sage-300);
+    transition: 0.25s ease;
 }
 
 .project-card:hover {
+    background-color: var(--sage-300);
     transform: translateY(-4px);
-    background: white;
 }
 
-/* CONTACT */
+/* ------------------------------------------- */
+/* CONTACT BOX                                 */
+/* ------------------------------------------- */
 .contact-box {
-    max-width: 420px;
+    background-color: var(--sage-200);
+    border-radius: 12px;
+    border: 1px solid var(--sage-300);
 }
 
-/* SOCIAL */
-.social-link {
-    color: #222;
-}
-
-.social-link:hover {
-    color: #000;
-}
-
-/* EASTER EGG */
+/* ------------------------------------------- */
+/* AVATAR EASTER EGG                           */
+/* ------------------------------------------- */
 .avatar-secret img {
-    width: 90px;
-    opacity: 0.2;
-    transition: 0.25s ease;
+    width: 180px;
+    opacity: 0.85;
+    transition: 0.4s;
 }
 
 .avatar-secret img:hover {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
