@@ -1,353 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mauricio Guzman | Cloud Solutions Architect</title>
-
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Custom Styles -->
-    <link href="css/new-styles.css" rel="stylesheet">
-</head>
-
-<body class="bg-light text-dark">
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Mauricio Guzman</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fw-semibold">
-                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- HERO -->
-    <header id="hero" class="hero-section container d-flex align-items-center justify-content-between">
-        <div class="hero-text">
-            <h1 class="display-4 fw-bold">Cloud Solutions Architect</h1>
-            <p class="lead mt-3 mb-4">
-                Designing scalable systems, integrating modern data pipelines,
-                and applying AI-driven solutions to solve complex business challenges.
-            </p>
-
-            <p class="text-muted mb-4">
-                I build marketing automation, cloud architectures, and data integrations
-                that serve real-world outcomes. Always learning, always improving.
-            </p>
-
-            <div class="d-flex gap-3">
-                <a href="#projects" class="btn btn-outline-dark px-4 py-2">View Projects</a>
-            </div>
-        </div>
-        <!-- Headshot Placeholder-->
-        <div class="hero-headshot">
-            <img src="img/myProfilePic.jpeg" alt="Mauricio Guzman Headshot" class="headshot-img">
-        </div>
-
-    </header>
-
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="py-5 bg-white border-top">
-        <div class="container">
-            <h2 class="fw-bold text-center mb-4">Core Capabilities</h2>
-
-            <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
-                <div class="col">
-                    <div class="skill-card p-4">
-                        <h5 class="fw-bold">Cloud & Architecture</h5>
-                        <p class="text-muted small mb-0">
-                            AWS · Azure · Serverless · API design · Identity · Security · Scalability
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="skill-card p-4">
-                        <h5 class="fw-bold">Data & Integrations</h5>
-                        <p class="text-muted small mb-0">
-                            Snowflake · ETL · SQL · Python · Data modeling · Pipelines · Streaming
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="skill-card p-4">
-                        <h5 class="fw-bold">MarTech & Automation</h5>
-                        <p class="text-muted small mb-0">
-                            Salesforce Marketing Cloud · Journey design · AMPscript · Automation Studio
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="skill-card p-4">
-                        <h5 class="fw-bold">AI & Emerging Tech</h5>
-                        <p class="text-muted small mb-0">
-                            LLM workflows · Agents · AI-assisted architecture · Prompt engineering
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="skill-card p-4">
-                        <h5 class="fw-bold">Development</h5>
-                        <p class="text-muted small mb-0">
-                            Python · JavaScript · Flask · REST APIs · Web development
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="skill-card p-4">
-                        <h5 class="fw-bold">Consulting & Strategy</h5>
-                        <p class="text-muted small mb-0">
-                            Blueprinting · Technical discovery · Solutions alignment · Stakeholder guidance
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- EXPERIENCE TIMELINE -->
-<section id="experience" class="py-5 container">
-    <div class="row g-4 mb-5">
-        <div class="col-12">
-            <h2 class="fw-bold text-center mb-5">Experience</h2>
-        </div>
-
-        <div class="col-12">
-            <div class="p-4 shadow-sm bg-white rounded border h-100">
-                <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
-                    <h5 class="fw-bold text-dark mb-1">Salesforce Marketing Cloud Solutions Architect</h5>
-                    <span class="badge bg-light text-dark border">2023 – Present</span>
-                </div>
-                <p class="text-muted small mb-3">Lithia & Driveway · Remote</p>
-                <ul class="mb-0 text-secondary">
-                    <li class="mb-2">
-                        <strong>Enterprise Cost Savings & Product Delivery:</strong> 
-                        Led the architectural design and rollout of an internal Reputation Management system, replacing third-party vendors to save the company <strong>~$1.8M annually</strong>. Coordinated with Product and Executive leadership to meet a strict 8-month go-live deadline.
-                    </li>
-                    <li class="mb-2">
-                        <strong>Migration & Scale:</strong> 
-                        Managed the technical migration of over <strong>200 dealership stores</strong> on launch day, consolidating disparate local Business Unit (BU) journeys into a centralized architecture to streamline operations.
-                    </li>
-                    <li class="mb-0">
-                        <strong>Technical Solutioning:</strong> 
-                        Designed the backend data flow using complex SQL automations and secure FTP integrations to sync feedback data with external partners. Validated the system through pilot testing and led the final "switch-over" strategy.
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12">
-            <div class="p-4 shadow-sm bg-white rounded border h-100">
-                <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
-                    <h5 class="fw-bold text-dark mb-1">Marketing Data Engineer</h5>
-                    <span class="badge bg-light text-dark border">2022 – 2023</span>
-                </div>
-                <p class="text-muted small mb-3">Lithia & Driveway · Remote</p>
-                <ul class="mb-0 text-secondary">
-                    <li class="mb-2">
-                        <strong>Analytics Infrastructure Pilot:</strong> 
-                        Engineered a Google BigQuery SQL solution to solve a reporting gap for the Creative Team, linking <strong>GA360 data</strong> (across 300+ store views) with Adobe Workfront asset logs via FTP. This enabled the first-ever tracking of asset-specific performance metrics in Power BI.
-                    </li>
-                    <li class="mb-2">
-                        <strong>Proof of Concept to Enterprise Strategy:</strong> 
-                        Successfully deployed the scheduled query automation to prove value. Identified long-term scalability and cost constraints (Power BI timeouts/BigQuery costs) and used these findings to guide the Data Team toward a robust, permanent Snowflake implementation.
-                    </li>
-                    <li class="mb-0">
-                        <strong>Pipeline Maintenance:</strong> 
-                        maintained reporting pipelines and collaborated with engineering to define data governance standards for downstream dashboards.
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12">
-            <div class="p-4 shadow-sm bg-white rounded border h-100">
-                <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
-                    <h5 class="fw-bold text-dark mb-1">Software Quality Assurance Lead</h5>
-                    <span class="badge bg-light text-dark border">2015 – 2022</span>
-                </div>
-                <p class="text-muted small mb-3">Transplant Connect · Hybrid</p>
-                <ul class="mb-0 text-secondary">
-                    <li class="mb-2"><strong>HIPAA Compliance & Reliability:</strong> Owned the testing strategy for mission-critical organ donation software. Ensured 100% compliance with strict healthcare regulations before any code hit production.</li>
-                    <li class="mb-2"><strong>Automation Strategy:</strong> Directed the scope of automated testing by identifying high-risk workflows for the automation team to target. Personally contributed to script development and maintenance to reduce manual regression cycles.</li>
-                    <li class="mb-0"><strong>Risk Assessment:</strong> Acted as the final "gatekeeper" for releases, proactively identifying architectural risks and scalability bottlenecks to prevent post-deployment failures.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- PROJECTS -->
- <section id="projects" class="py-5 bg-white border-top">
-    <div class="container">
-        <h2 class="fw-bold text-center mb-4">Projects & Case Studies</h2>
-        <p class="text-center text-muted mb-5">A mix of cloud, data, automation, AI, and integration work.</p>
-
-        <div class="row g-4">
-            <div class="col-12">
-                <div class="featured-project p-4 shadow-sm bg-white rounded border">
-                    <div class="d-flex justify-content-between align-items-start flex-wrap mb-3">
-                        <div>
-                            <h4 class="fw-bold text-dark mb-1">AI-Assisted Cloud Architecture Intake System</h4>
-                            <span class="badge bg-secondary me-1">Next.js</span>
-                            <span class="badge bg-secondary me-1">OpenAI GPT-4o-mini</span>
-                            <span class="badge bg-secondary">Vercel Serverless Functions</span>
-                        </div>
-                        <div class="mt-2 mt-md-0">
-                            <a href="https://ai-architecture-advisor.vercel.app" target="_blank"
-                                class="btn btn-sm btn-dark me-2">Live Demo</a>
-                            <a href="https://github.com/datad3v/ai-architecture-advisor" target="_blank"
-                                class="btn btn-sm btn-outline-dark">GitHub</a>
-                        </div>
-                    </div>
-
-                    <div class="row g-4">
-                        <div class="col-lg-6">
-                            <h5 class="fw-bold text-uppercase text-secondary small mb-3 border-bottom pb-2">
-                                Technical Architecture
-                            </h5>
-                            <div class="mb-3">
-                                <strong class="d-block text-dark">Frontend & State Management</strong>
-                                <p class="text-muted small mb-2">Built on Next.js to utilize a modular, component-based architecture mirroring enterprise standards. Leveraged Serverless API Routes to secure API keys and orchestrate backend requests.</p>
-                            </div>
-                            <div class="mb-3">
-                                <strong class="d-block text-dark">AI Model Selection</strong>
-                                <p class="text-muted small mb-2">Selected <strong>GPT-4o-mini</strong> as the inference engine. This offered the optimal intersection of latency, cost-efficiency, and reasoning quality for high-level architectural abstractions.</p>
-                            </div>
-                            <div class="mb-0">
-                                <strong class="d-block text-dark">Deployment Strategy</strong>
-                                <p class="text-muted small mb-0">Deployed via Vercel to utilize edge caching and automated CI/CD pipelines, ensuring Day 1 scalability.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <h5 class="fw-bold text-uppercase text-secondary small mb-3 border-bottom pb-2">Key Decisions & Trade-offs</h5>
-                            <div class="mb-3">
-                                <strong class="d-block text-dark">Probabilistic vs. Deterministic</strong>
-                                <p class="text-muted small mb-2">
-                                    <span class="badge bg-warning text-dark me-1">Constraint</span>
-                                    As an LLM-based solution, outputs are probabilistic.
-                                    <br>
-                                    <span class="badge bg-success me-1">Mitigation</span>
-                                    UI explicitly frames results as "Recommendations" to set user expectations for discovery, not final implementation.
-                                </p>
-                            </div>
-                            <div class="mb-3">
-                                <strong class="d-block text-dark">Domain Specialization</strong>
-                                <p class="text-muted small mb-2">Leverages a generalist foundation model. Effective for standard patterns (e.g., 3-Tier Web App) but lacks deep specialization for niche compliance (HIPAA).</p>
-                            </div>
-                            <div class="mb-0">
-                                <strong class="d-block text-dark">External Dependency</strong>
-                                <p class="text-muted small mb-0">
-                                    <em>Architectural Note:</em> Tightly coupled to OpenAI API limits. A production-grade version would require a fallback strategy (e.g., queuing requests) to handle downtime.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="project-card p-4 shadow-sm bg-white rounded border h-100">
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h5 class="fw-bold text-dark mb-0">RESTful Vehicle Data API</h5>
-                        <a href="https://github.com/datad3v/vinDecoder" target="_blank" class="btn btn-sm btn-outline-dark">GitHub</a>
-                    </div>
-                    <p class="text-muted small mb-3">Python · Flask · API Design</p>
-                    <p class="small text-secondary mb-3">
-                        Designed a lightweight REST API to decouple vehicle data logic from frontend applications. Implemented standardized JSON response schemas and error handling patterns suitable for microservices consumption.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="project-card p-4 shadow-sm bg-white rounded border h-100">
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h5 class="fw-bold text-dark mb-0">Automated Weather Data ETL</h5>
-                        <a href="https://github.com/datad3v/Data-Pipeline4Real-Time-Analytics-Dashboard" target="_blank" class="btn btn-sm btn-outline-dark">GitHub</a>
-                    </div>
-                    <p class="text-muted small mb-3">Python · SQLite · Plotly · Automation</p>
-                    <p class="small text-secondary mb-3">
-                        Engineered an end-to-end data pipeline ingesting real-time API data. Automated the Extraction, Transformation, and Loading (ETL) into a relational store (SQLite) to power dynamic visualization dashboards.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>   
-
-    <!-- CONTACT -->
-    <section id="contact" class="py-5 container">
-        <h2 class="fw-bold text-center mb-4">Get in Touch</h2>
-        <p class="text-center text-muted mb-4">Open to consulting, contract work, and architecture roles.</p>
-
-        <div class="contact-box mx-auto p-4 shadow-sm bg-white rounded text-center">
-
-            <p class="mb-2 fw-semibold">Email:</p>
-
-            <!-- Email placeholder (filled by JS) -->
-            <a id="contact-email" href="#" class="text-dark fw-bold fs-5"></a>
-
-            <div class="mt-4 d-flex justify-content-center gap-4">
-                <a href="https://www.linkedin.com/in/mauricio-guzman-profile/" target="_blank" class="social-link">
-                    <i class="bi bi-linkedin fs-3"></i>
-                </a>
-
-                <a href="https://github.com/datad3v" target="_blank" class="social-link">
-                    <i class="bi bi-github fs-3"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Email Obfuscation Script -->
+    <title>datad3v | Engineering Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        // Break email into parts
-        const user = "datad3v";
-        const domain = "gmail";
-        const tld = "com";
-
-        // Assemble
-        const email = `${user}@${domain}.${tld}`;
-
-        // Apply to DOM
-        const emailLink = document.getElementById("contact-email");
-        emailLink.textContent = email;
-        emailLink.href = `mailto:${email}`;
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
+                    },
+                },
+            },
+        }
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-950 font-sans text-slate-300 min-h-screen selection:bg-blue-500/30 selection:text-blue-200 antialiased overflow-x-hidden">
 
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[500px] bg-gradient-to-b from-blue-500/5 via-transparent to-transparent pointer-events-none blur-[120px]" aria-hidden="true"></div>
 
-    <!-- FOOTER -->
-    <footer class="py-3 text-center bg-dark text-white mt-5">
-        <p class="mb-0">&copy; 2025 Mauricio Guzman — All Rights Reserved</p>
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32 relative z-10">
+        
+        <header class="mb-16 border-b border-slate-900 pb-10">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                <div>
+                    <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl font-mono">
+                        <span class="text-slate-500">&lt;</span>datad3v<span class="text-slate-500"> /&gt;</span>
+                    </h1>
+                    <p class="mt-3 text-base text-slate-400 max-w-2xl leading-relaxed">
+                        Systems Orchestration & AI Infrastructure Engineer. Focused on localized model deployment pipelines, hardware-accelerated sandboxes, and zero-trust engineering environments.
+                    </p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="https://github.com/datad3v" target="_blank" class="px-4 py-2 text-xs font-mono rounded-lg border border-slate-800 bg-slate-900/40 text-slate-300 hover:text-white hover:border-slate-700 transition-all">
+                        GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="flex items-center gap-3 mb-8">
+                <h2 class="text-lg font-mono font-bold uppercase tracking-wider text-slate-400">
+                    // Systems Showroom
+                </h2>
+                <div class="h-[1px] bg-slate-900 flex-1"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="relative group rounded-2xl border border-slate-800 bg-slate-950 p-6 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-blue-500/50 hover:shadow-[0_0_40px_rgba(59,130,246,0.12)]">
+                  
+                  <div class="flex items-center justify-between mb-4">
+                    <span class="flex items-center gap-2 text-[10px] font-mono tracking-widest text-emerald-400 uppercase">
+                      <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                      Secure Enclave Active
+                    </span>
+                    <span class="text-[10px] font-mono text-slate-500">Node // AMD-ROCm v2</span>
+                  </div>
+
+                  <h3 class="text-2xl font-bold tracking-tight text-white group-hover:text-blue-400 transition-colors">
+                    Project Covenant 🛡️
+                  </h3>
+                  
+                  <p class="mt-1 text-xs font-mono text-slate-400">
+                    On-Premise RAG Mortgage Auditing Engine
+                  </p>
+
+                  <div class="mt-4 bg-slate-900/60 rounded-xl p-4 border border-slate-800/80">
+                    <input type="checkbox" id="telemetry-toggle-covenant" class="hidden peer">
+                    
+                    <div class="flex justify-between items-center pb-2 border-b border-slate-800 font-mono text-[10px] text-slate-400">
+                      <span>Specification Sheet</span>
+                      <label for="telemetry-toggle-covenant" class="cursor-pointer text-blue-400 hover:text-blue-300 transition-colors uppercase font-bold tracking-wider select-none">
+                        [ Toggle System Log View ]
+                      </label>
+                    </div>
+
+                    <div class="peer-checked:hidden mt-3 space-y-2 text-sm text-slate-300 transition-all duration-200">
+                      <p class="text-xs leading-relaxed text-slate-400">
+                        A security-first regulatory implementation that analyzes consumer financial parameters without public cloud network data egress.
+                      </p>
+                      <ul class="text-xs font-mono space-y-1 text-slate-300">
+                        <li>⚡ <b class="text-slate-400">Relational:</b> Custom ETL schema querying SQLite3 parameters.</li>
+                        <li>⚡ <b class="text-slate-400">Semantic Vector:</b> Native ChromaDB indexing via Ollama layers.</li>
+                        <li>⚡ <b class="text-slate-400">Synthesis:</b> Hardware-accelerated inference of Qwen 2.5 (7B).</li>
+                      </ul>
+                    </div>
+
+                    <div class="hidden peer-checked:block mt-3 space-y-2 text-[11px] font-mono text-emerald-300 transition-all duration-200">
+                      <p class="text-slate-500">// Bypassing host kernel package tracking limitations:</p>
+                      <p class="text-amber-400">WARN [0000] services.ollama syntax tracking 'version' obsolete; upgraded.</p>
+                      <p class="text-blue-400">INFO -> Mapping hardware compute rings /dev/kfd & /dev/dri via HSA_OVERRIDE_GFX_VERSION=10.3.0</p>
+                      <p class="text-emerald-400">SUCCESS -> 3 explicit regulatory guidelines compiled to discrete vector space arrays. Token pipeline hot-swapped.</p>
+                    </div>
+                  </div>
+
+                  <div class="mt-4 flex flex-wrap gap-1.5 font-mono text-[10px]">
+                    <span class="bg-blue-500/10 text-blue-400 border border-blue-500/20 px-2 py-0.5 rounded">Python</span>
+                    <span class="bg-purple-500/10 text-purple-400 border border-purple-500/20 px-2 py-0.5 rounded">ChromaDB</span>
+                    <span class="bg-amber-500/10 text-amber-400 border border-amber-500/20 px-2 py-0.5 rounded">Docker V2</span>
+                    <span class="bg-slate-800 text-slate-400 border border-slate-700 px-2 py-0.5 rounded">ROCm API</span>
+                  </div>
+
+                  <div class="mt-6 flex items-center justify-between pt-4 border-t border-slate-900">
+                    <a href="https://github.com/datad3v/onprem-rag-compliance-engine" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-mono text-slate-400 hover:text-white transition-colors">
+                      <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                      Inspect Core Engine Code
+                    </a>
+                  </div>
+                </div>
+
+                </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-900 py-6 text-center text-xs font-mono text-slate-600 relative z-10">
+        <p>&copy; 2026 datad3v // Secure Node Deployment // Total Privacy Guaranteed</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
